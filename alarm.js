@@ -14,10 +14,10 @@ let set = () => {
 
             
             setTimeout(() => {
-                // audio.pause();
+                audio.pause();
                 clearInterval(a); 
                 display.innerHTML = "Alarm stopped";
-            }, 7000);
+            }, 15000);
         } else {
             display.innerHTML = "Alarm is set for " + inp;
         }
