@@ -10,12 +10,12 @@ let set = () => {
 
         if (currentTime === inp) { 0
             display.innerHTML = "Alarm is ringing!";
-            // audio.play(); // Play the alarm sound
+            audio.play();
 
             
             setTimeout(() => {
                 // audio.pause();
-                clearInterval(a); // Clear the interval
+                clearInterval(a); 
                 display.innerHTML = "Alarm stopped";
             }, 7000);
         } else {
