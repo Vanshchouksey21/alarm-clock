@@ -23,3 +23,12 @@ let set = () => {
         }
     }, 1000);
 };
+
+
+
+let isname=true;
+setInterval(()=>{
+    let display = document.querySelector("#vansh")
+    display.innerHTML=isname?"V.Alram":"Clock "
+    isname= !isname
+},2000)
