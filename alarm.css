@@ -1,80 +1,112 @@
 /* General body styling */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    background: linear-gradient(to bottom right, #6dd5fa, #2980b9);
+    min-height: 100vh;
+    background: linear-gradient(135deg, #6dd5fa, #2980b9);
+    /* background: burlywood; */
     color: #fff;
+    text-align: center;
 }
 
 /* Heading styling */
 h1 {
-    font-size: 36px;
-    margin-bottom: 20px;
+    font-size: 3rem;
+    margin-bottom: 1rem;
     color: #ffffff;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5);
 }
 
 /* Container styling */
 div {
-    text-align: center;
     background: #ffffff;
-    padding: 20px 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
     color: #333;
+    width: 90%;
+    max-width: 400px;
 }
 
 /* Input field styling */
 #inp {
-    padding: 10px;
-    font-size: 16px;
+    padding: 0.8rem;
+    font-size: 1rem;
     border: 2px solid #4caf50;
     border-radius: 5px;
     outline: none;
-    width: 150px;
+    width: calc(100% - 2.6rem);
+    margin-bottom: 1rem;
     text-align: center;
 }
 
 /* Button styling */
 button {
-    padding: 10px 20px;
-    font-size: 16px;
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
     color: #fff;
     background-color: #4caf50;
+    /* background-color: burlywood; */
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    margin-left: 10px;
-    transition: background-color 0.3s ease;
+    margin: 0.5rem 0.5rem 0 0.5rem;
+    transition: all 0.3s ease;
 }
 
 button:hover {
     background-color: #45a049;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+button:active {
+    transform: scale(0.95);
 }
 
 /* Alarm status display */
 #d1 {
-    margin-top: 20px;
-    font-size: 18px;
+    margin-top: 1.5rem;
+    font-size: 1.2rem;
     font-weight: bold;
     color: #333;
 }
 
+/* Footer styling */
+footer {
+    position: fixed;
+    bottom: 10px;
+    left: 590px;
+    text-align: center;
+    color: #fff;
+    font-size: 0.9rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    width: 100%;
+}
+
 /* Responsive design for smaller screens */
 @media (max-width: 600px) {
-    #inp {
-        width: 100%;
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    div {
+        width: 95%;
+        padding: 1.5rem;
     }
 
     button {
+        width: calc(100% - 1rem);
+        margin: 0.5rem auto;
+    }
+
+    #inp {
         width: 100%;
-        margin-top: 10px;
-        margin-left: 0;
     }
 }
