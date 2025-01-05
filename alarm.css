@@ -8,8 +8,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: linear-gradient(135deg, #6dd5fa, #2980b9);
-    /* background: burlywood; */
+    background: linear-gradient(135deg, #ff758c, #f06595); /* Modern gradient */
     color: #fff;
     text-align: center;
 }
@@ -18,31 +17,47 @@ body {
 h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
-    color: #ffffff;
-    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5);
+    color: black;
+    text-shadow: 
+        2px 4px 5px rgba(0, 0, 0, 0.6),   /* Main shadow for depth */
+        0px 0px 10px rgba(255, 255, 255, 0.8), /* Glow effect */
+        0px 0px 15px rgba(255, 200, 200, 0.5); /* Subtle pinkish glow */
+    font-weight: 700; /* Bold for hierarchy */
 }
 
 /* Container styling */
 div {
     background: #ffffff;
     padding: 2rem;
-    border-radius: 15px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 20px; /* Increased border-radius for a smoother look */
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3), 0 4px 10px rgba(0, 0, 0, 0.1);
     color: #333;
     width: 90%;
     max-width: 400px;
+    transition: all 0.3s ease; /* Added transition for hover effects */
+}
+
+div:hover {
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.4), 0 6px 15px rgba(0, 0, 0, 0.2); /* Adds a hover effect */
+    transform: translateY(-5px);
 }
 
 /* Input field styling */
 #inp {
     padding: 0.8rem;
     font-size: 1rem;
-    border: 2px solid #4caf50;
-    border-radius: 5px;
+    border: 2px solid #ccc; /* Softer border color */
+    border-radius: 8px; /* Slightly increased radius */
     outline: none;
-    width: calc(100% - 2.6rem);
+    box-sizing: border-box; /* Ensures consistent sizing */
+    width: 100%;
     margin-bottom: 1rem;
     text-align: center;
+}
+
+#inp:focus {
+    outline: 2px solid #A22A59;
+    outline-offset: 2px;
 }
 
 /* Button styling */
@@ -52,42 +67,48 @@ button {
     font-size: 1rem;
     font-weight: bold;
     color: #fff;
-    background-color: #4caf50;
-    /* background-color: burlywood; */
+    background-color: #333;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px; /* Softer corners */
     cursor: pointer;
     margin: 0.5rem 0.5rem 0 0.5rem;
     transition: all 0.3s ease;
 }
 
 button:hover {
-    background-color: #45a049;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    background-color: #A22A59;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
 }
 
 button:active {
     transform: scale(0.95);
 }
 
+button:focus {
+    outline: 2px solid #A22A59;
+    outline-offset: 2px;
+}
+
 /* Alarm status display */
 #d1 {
     margin-top: 1.5rem;
     font-size: 1.2rem;
-    font-weight: bold;
+    font-weight: 500;
     color: #333;
+    display: flex;
+    justify-content: center;
 }
 
 /* Footer styling */
 footer {
     position: fixed;
     bottom: 10px;
-    left: 590px;
+    left: 0;
+    width: 100%;
     text-align: center;
     color: #fff;
     font-size: 0.9rem;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-    width: 100%;
 }
 
 /* Responsive design for smaller screens */

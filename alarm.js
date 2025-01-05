@@ -57,6 +57,6 @@ let showTime = () => {
 let isName = true;
 setInterval(() => {
     let title = document.querySelector("#vansh");
-    title.innerHTML = isName ? "V. Alarm" : "Clock";
+    title.innerHTML = isName ? "Alarm" : "Clock";
     isName = !isName;
 }, 2000);
