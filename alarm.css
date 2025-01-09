@@ -102,8 +102,8 @@ button:focus {
 /* Footer styling */
 footer {
     position: fixed;
-    bottom: 2%;
-    left: 24%;
+    bottom: 1%;
+    left: 20%;
     width: 100%;
     text-align: center;
     color: #fff;
@@ -129,5 +129,31 @@ footer {
 
     #inp {
         width: 100%;
+    }
+}
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2rem;
+        margin-bottom: 0.8rem;
+    }
+
+    div {
+        padding: 1.2rem;
+        width: 90%;
+    }
+
+    #inp {
+        padding: 0.7rem;
+        font-size: 0.9rem;
+    }
+
+    button {
+        padding: 0.7rem 1.2rem;
+        font-size: 0.9rem;
+    }
+
+    footer {
+        font-size: 0.8rem;
+        left: 10%;
     }
 }
