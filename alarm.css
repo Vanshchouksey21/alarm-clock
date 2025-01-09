@@ -102,8 +102,8 @@ button:focus {
 /* Footer styling */
 footer {
     position: fixed;
-    bottom: 10px;
-    left: 495px;
+    bottom: 2%;
+    left: 24%;
     width: 100%;
     text-align: center;
     color: #fff;
